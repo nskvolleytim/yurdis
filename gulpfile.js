@@ -33,7 +33,8 @@ gulp.task('scripts', function() {
 		'./app/libs/modernizr/modernizr.js',
 		'./app/libs/jquery/jquery-1.11.2.min.js',
 		'./app/libs/waypoints/waypoints.min.js',
-		'./app/libs/animate/animate-css.js'		
+		'./app/libs/animate/animate-css.js',
+		'./app/libs/plugins-scroll/plugins-scroll.js'		
 		])
 		.pipe(concat('libs.js'))
 		//.pipe(uglify()) //Minify libs.js
