@@ -7,6 +7,26 @@ $(function() {
 		delay: 300
 	}) ;	
 
+	var owl = $(".slider");
+
+	owl.owlCarousel({
+		loop: true,
+		items: 1,
+		itemClass: "slide-wrap",
+
+	});
+
+
+	$(".owl-next").click(function(){
+		owl.trigger('next.owl.carousel');
+	});
+
+	$(".owl-prev").click(function(){
+		owl.trigger('prev.owl.carousel');
+	});
+
+
+
 
 	//SVG Fallback
 	if(!Modernizr.svg) {
